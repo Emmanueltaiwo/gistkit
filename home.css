@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(185, 185, 185, 0.592);
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.html{
+    font-size: 62.5%;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #fff;
+    position: fixed;
+    width: 100%;
+    background: grey;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+    text-align: center;
+}
+
+.navbar-container{
+    height: 64px;
+    text-align: center;
+}
+
+
+.logo{
+    order: 1;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+
+  
+  /* Remove margins and padding from the list */
+  table {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+table {
+    color: #000;
+    list-style: none;
+    width: 150vh;
+    cursor: pointer;
+    position: relative;
+    right: 40vh;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 20px;
+    transition: 0.2s;
+    margin-left: 0vh;
+    margin-top: 3vh;
+    height: 20vh;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+table:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+table:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+table.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+ table.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: grey;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    width: 90vh;
+    margin-left: 65vh;
+    height: 50vh;
+  }
+  
+  span{
+    font-size: 30px;
+  }
+
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 97%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    margin-top: 3vh;
+  }
+  
+  /* Style the "Add" button */
+  input[type=submit] {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    margin-top: 2vh;
+    position: relative;
+    right: 0vh;
+    margin-left: 25vh;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #bbb;
+  }
+  
+
+  #myInput{
+    margin-top: 3vh;
+  }
+
+  table{
+    margin-top: 40vh;
+  }
+
+
+
+
+
+  /*Media query - Mobile view*/
+@media (max-width: 360px){
+  .navbar{
+    width: 100%;
+  }
+
+  .header{
+    width: 45vh;
+    position: relative;
+    right: 63vh;
+  }
+
+  input[type=submit]{
+    position: relative;
+    right: 15vh;
+  }
+
+  table{
+    width: 45vh;
+    margin-left: 33.5vh;
+    font-size: 15px;
+  }
+}
